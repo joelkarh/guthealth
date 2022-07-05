@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import menustyle from '../styles/Home.module.scss'
 
-const Menu = () => {
+
+const Menu = (props) => {
   return (
     <>
-    <nav>
+    <nav className={menustyle.display}>
         <ul>
             <li>
                 <Link href="/">
