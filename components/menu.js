@@ -6,7 +6,7 @@ import menustyle from '../styles/Home.module.scss'
 const Menu = (props) => {
   return (
     <>
-    <nav className={menustyle.display}>
+    <nav className={`${menustyle.display} `}>
         <ul>
             <li>
                 <Link href="/">

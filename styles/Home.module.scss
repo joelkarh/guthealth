@@ -12,6 +12,7 @@ $defaultBrown : #d49b72;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    overflow: hidden;
 }
 //menu-bar
 .menuBar{
@@ -22,6 +23,7 @@ $defaultBrown : #d49b72;
     justify-content: space-between;
     flex-direction: column;
     margin-bottom: 15px;
+    z-index: 4;
     @include media-breakpoint-up(lg) { 
         display: none;
     }
@@ -29,39 +31,69 @@ $defaultBrown : #d49b72;
 .menuBarSlice{
     width:100%;
     height:2px;
-    background-color: $defaultBrown;
+    background-color:beige;
     display: block;
 
     &:nth-child(1){ 
-        transform: translateY(8px);
-        transition: all 1000ms ease-in-out;
-        height: 0;
+    transform: translateY(8px) rotate(45deg);
+    
+
     }
     &:nth-child(2){ 
-        width: 0%;
-        transition: all 1000ms ease-in-out;
-        height: 0;
+        transform: rotateY(89deg);
     }
     &:nth-child(3){ 
-        transform: translateY(-8px);
-        transition: all 1000ms ease-in-out;
-        height: 0;
+        transform: translateY(-8px) rotate(-45deg) ;
     }
     
 }
+.menubarSliceGone{
+    transition: all 1000ms ease-in-out;
+}
+
 
 
 //brand
 
 .brand{
     padding:10px 0;
-}
-.display{
-    display: none;
+    margin-left: auto;
+    margin-right: auto;
     @include media-breakpoint-up(lg) {
-        display: block;
+        margin-left: unset;
+        margin-right: unset;
     }
 }
+//navdisplay 
+.display{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #d49b72;
+    height: 100%;
+    transform: translateX(100%);//tijdlijk mag daarna weg 
+    li{
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    @include media-breakpoint-up(lg) {
+        display: block;
+        position: unset;
+    }
+}
+//right to left
+.open{
+    transform: translateX(0);
+}
+.closed{
+    transform: translateX(100%);
+}
+
 
 // Source mixins
 

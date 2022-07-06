@@ -102,7 +102,19 @@ body {
     max-width: 100%;
     height: auto;
   }
-
+nav{
+   ul{
+    list-style: none;
+    padding:0;
+    li{
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+      
+    }
+  }
+}
  
   // Source mixins
 
