@@ -40,6 +40,14 @@ body {
     background-color: #efe9e4;
   }
 
+  //container-fluid
+  .container-fluid {
+    max-width: 1640px;
+  }
+button{
+  border: none;
+  background-color: transparent;
+}
   h1 {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -115,7 +123,18 @@ nav{
     }
   }
 }
+//hamburger
  
+.slice{
+  transform: translateY(8px) rotate(45deg);
+}
+.slice2{
+  transform: rotateY(89deg);
+}
+.slice3{
+  transform: translateY(-6px) rotate(-45deg) ;
+}
+
   // Source mixins
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`

@@ -1,11 +1,19 @@
 import React from 'react'
+import {useState} from 'react'
 import Link from 'next/link'
 import menustyle from '../styles/Home.module.scss'
+import MenuButton from './menubutton'
 
 
-const Menu = (props) => {
+const Menu = () => {
+    const [menu, setMenu] = useState(false)
+    const openMenu = () =>{
+        setMenu(!menu)
+        console.log(menu)
+    }
   return (
     <>
+    <MenuButton isOpen={openMenu}/>
     <nav className={`${menustyle.display} `}>
         <ul>
             <li>
