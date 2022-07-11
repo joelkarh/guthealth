@@ -123,17 +123,46 @@ nav{
     }
   }
 }
+.p-0{
+  padding: 0;
+}
+.booking-btn{
+  background: #96695e;
+  margin: 0 2rem !important;
+  border: none;
+  border-radius: 50px;
+  @include media-breakpoint-up(lg) {
+    a{
+      color: #fff !important;
+    }
+  }
+}
 //hamburger
  
+
 .slice{
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(10px) translateX(1px) rotate(45deg);
 }
 .slice2{
-  transform: rotateY(89deg);
+  transform: rotateY(90deg);
 }
 .slice3{
-  transform: translateY(-6px) rotate(-45deg) ;
+  transform: translateY(-6px) translateX(-1px) rotate(-45deg) ;
 }
+.sliceAnimation{
+  transition: all 900ms ease-in-out;
+}
+.sliceAnimationOut{
+  transition: all 500ms ease-in-out;
+}
+.open{
+  transform: translateX(0);
+}
+.closed{
+  transform: translateX(100%);
+  
+}
+
 
   // Source mixins
 
