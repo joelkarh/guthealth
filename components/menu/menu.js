@@ -29,7 +29,7 @@ const Menu = () => {
             menuItem:'Contact'
         },
         {
-            id: 1,
+            id: 5,
             href: '/',
             menuItem:'Boek een discovery call',
             style:'booking-btn'
@@ -37,7 +37,7 @@ const Menu = () => {
     ]
     //menu = false 
 
-  return (
+return (
     <>
     <MenuButton menu = {menu} setMenu={setMenu} />
     <nav className={`${menustyle.display} ${menu ? 'open sliceAnimationOut' : 'closed sliceAnimationOut'} `}>
@@ -49,7 +49,7 @@ const Menu = () => {
                 </Link>
             </li>
             ))
-               }
+            }
         </ul>
     </nav>
     </>

@@ -1,4 +1,17 @@
 // Custom.scss
+@font-face {
+  font-family:  Lovelice;
+  src: url('../fonts/LovelaceRegular.otf');
+}
+@font-face {
+  font-family: PorporaReg;
+  src: url('../fonts/PorporaReg.ttf');
+}
+@font-face {
+  font-family:  CoconatReg;
+  src: url('../fonts/CoconatReg.otf');
+}
+
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
@@ -33,10 +46,10 @@
 $defaultBrown : #d49b72;
 
 body {
-    font-family: Porpora, sans-serif;
+    font-family: PorporaReg, sans-serif;
     color: #1b1d1e;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.75rem;
     background-color: #efe9e4;
   }
 
@@ -50,35 +63,41 @@ button{
 }
   h1 {
     margin-top: 0px;
-    margin-bottom: 20px;
-    font-family: Coconat, sans-serif;
-    font-size: 56px;
-    line-height: 68px;
+
+    font-family: CoconatReg, sans-serif;
+    font-size: 3rem;
+
     font-weight: 400;
+    @include media-breakpoint-up(xl) {
+      font-size: 56px;
+    }
   }
 
   h2 {
     margin-top: 0px;
-    margin-bottom: 16px;
-    font-family: Coconat, sans-serif;
-    font-size: 40px;
-    line-height: 56px;
-    font-weight: 400;
+    font-family: CoconatReg, sans-serif;
+    font-size: 1rem;
+
+    font-weight: 100;
+    font-stretch: condensed;
+    @include media-breakpoint-up(xl) {
+      font-size: 1rem;
+    }
   }
 
   h3 {
     margin-top: 0px;
-    margin-bottom: 12px;
-    font-family: Coconat, sans-serif;
+
+    font-family: CoconatReg, sans-serif;
     font-size: 32px;
-    line-height: 40px;
+
     font-weight: 400;
   }
 
   h4 {
     margin-top: 0px;
     margin-bottom: 12px;
-    font-family: Coconat, sans-serif;
+    font-family: CoconatReg, sans-serif;
     font-size: 24px;
     line-height: 32px;
     font-weight: 400;
@@ -87,7 +106,7 @@ button{
   h5 {
     margin-top: 0px;
     margin-bottom: 10px;
-    font-family: Coconat, sans-serif;
+    font-family: CoconatReg, sans-serif;
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
@@ -105,6 +124,7 @@ button{
 
   p {
     margin-bottom: 0px;
+    @include media-breakpoint-up(xl)
   }
   img {
     max-width: 100%;
@@ -163,6 +183,19 @@ nav{
   
 }
 
+/*-------------- homeCss-------*/
+.homeImage{
+padding: 2rem 0;
+  @include media-breakpoint-up(lg){ 
+  width: 100% !important;
+  display: flex !important;
+  
+  justify-content: center !important;
+  }
+}
+.bigFont{
+  font-size:0.850rem;
+}
 
   // Source mixins
 

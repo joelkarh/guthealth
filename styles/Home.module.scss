@@ -1,12 +1,18 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
-
+//font
+@font-face {
+    font-family:  Lovelice,sans-serif;
+    src: url('../fonts/LovelaceRegular.otf');
+  }
 
 //variables.
 $defaultBrown : #d49b72;
 $navlink : #96695e;
+$titleFont: Lovelace, sans-serif;
+
+/****************************************************************menu, navigationbar *********/
 //menu
 .menu{
     display: flex;
@@ -46,11 +52,7 @@ $navlink : #96695e;
 .menubarSliceGone{
     transition: all 1000ms ease-in-out;
 }
-
-
-
 //brand
-
 .brand{
     padding:10px 0;
     margin-left: auto;
@@ -82,9 +84,10 @@ $navlink : #96695e;
         align-items: center;
         }
         a{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: semibold;
             font-stretch: condensed;
+            
         }
         
     @include media-breakpoint-up(lg) {
@@ -103,11 +106,14 @@ $navlink : #96695e;
             align-items: unset;
             padding: 6px 12px;
             a{
-                font-size: 1.2rem;
+                font-size: 0.853rem;
                 color: $navlink;
                 opacity: .7;
                 &:hover{
                     opacity: 1;
+                }
+                @include media-breakpoint-up(xxl) {
+                    font-size: 1.3rem;
                 }
             }
             }
@@ -120,7 +126,14 @@ $navlink : #96695e;
 .closed{
     transform: translateX(100%);
 }
+/********* HomeCSS ********************************/
+.homeRow{
+    padding: 1rem;
+@include media-breakpoint-up(xxl) {
+    padding: 3rem;
+}
 
+}
 
 // Source mixins
 
