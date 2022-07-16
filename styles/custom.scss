@@ -44,13 +44,14 @@
 
 // 8. Add additional custom code here
 $defaultBrown : #d49b72;
-
+$homebg:#e8edf0;
+$homebgtwoo : #efe9e4;
 body {
     font-family: PorporaReg, sans-serif;
     color: #1b1d1e;
     font-size: 16px;
-    line-height: 1.75rem;
-    background-color: #efe9e4;
+    line-height: 24px;
+    background-color: $homebg;
   }
 
   //container-fluid
@@ -62,23 +63,25 @@ button{
   background-color: transparent;
 }
   h1 {
-    margin-top: 0px;
-
+    margin-top: 20px;
+    margin-bottom: 24px;
     font-family: CoconatReg, sans-serif;
-    font-size: 3rem;
-
+    font-size: 40px;
+    line-height: 56px;
     font-weight: 400;
     @include media-breakpoint-up(xl) {
       font-size: 56px;
+      margin-top: 24px;
+      line-height: 68px;
     }
   }
 
   h2 {
     margin-top: 0px;
     font-family: CoconatReg, sans-serif;
-    font-size: 1rem;
-
+    font-size: 40px;
     font-weight: 100;
+    line-height: 56px;
     font-stretch: condensed;
     @include media-breakpoint-up(xl) {
       font-size: 1rem;
@@ -87,9 +90,9 @@ button{
 
   h3 {
     margin-top: 0px;
-
-    font-family: CoconatReg, sans-serif;
     font-size: 32px;
+    line-height: 40px;
+    font-family: CoconatReg, sans-serif;
 
     font-weight: 400;
   }
@@ -137,7 +140,7 @@ nav{
     li{
       a{
         text-decoration: none;
-        color: #fff;
+        color: #222222;
       }
       
     }
@@ -194,7 +197,9 @@ padding: 2rem 0;
   }
 }
 .bigFont{
-  font-size:0.850rem;
+  max-width: 410px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
   // Source mixins

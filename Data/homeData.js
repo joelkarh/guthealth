@@ -1,10 +1,10 @@
 export const firstSection = [
     {
         id: 1,
-        title: 'Gut health' ,
+        title: 'Gut health, Eat good food, for better health and mood' ,
         subtitle: 'Are you ready to change your life? ',
-        description: '“THE HUMAN BODY HAS A RINGMASTER THAT CONTROLS YOUR DIGESTION, IMMUNITY, BRAIN, WEIGHT, HEALTH AND HAPPINESS. THIS RINGMASTER IS THE GUT.”— Nancy S Mure',
-        img:'/Home/feelgood.jpg',
+        description: 'Launching your brand new health and wellness  website has never been easier with Helti. ',
+        img:'/Home/romy.jpg',
         style:'homeImage',
         height:'500',
         width:'400',

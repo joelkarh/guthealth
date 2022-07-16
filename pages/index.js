@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Layout from '../components/menu/layout'
 import styles from '../styles/Home.module.scss'
 import {firstSection} from '../Data/homeData'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -15,9 +16,16 @@ export default function Home() {
        { firstSection.map(({id, title ,height, width, style, subtitle,description, img, }) =>(
         <div key={id} className={`row ${styles.homeRow}`}>
         <div  className="col-12 col-md">
+        <h6>{subtitle}</h6>
          <h1 className='order-sm-0'>{title} {''}</h1>
-         <h2>{subtitle}</h2>
          <p className="bigFont">{description}</p>
+         <button type='button' className='btn btn-primary' onClick={''}>
+          <Link href={'/'}>
+          <a>
+            click me
+          </a>
+          </Link>
+         </button>
         </div>
         <div className={`col-12 col-md   ${style}`}>
            <Image className="img-fluid " priority src={img} height={height} width={width} alt={''} objectFit={'cover'} />
