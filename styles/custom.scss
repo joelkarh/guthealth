@@ -46,6 +46,10 @@
 $defaultBrown : #d49b72;
 $homebg:#e8edf0;
 $homebgtwoo : #efe9e4;
+a{
+  color:unset !important;
+  text-decoration: none !important;
+}
 body {
     font-family: PorporaReg, sans-serif;
     color: #1b1d1e;
@@ -189,11 +193,24 @@ nav{
 /*-------------- homeCss-------*/
 .homeImage{
 padding: 2rem 0;
+position: relative;
   @include media-breakpoint-up(lg){ 
+  padding: unset;
   width: 100% !important;
   display: flex !important;
-  
   justify-content: center !important;
+  }
+}
+.img-wrapper {
+  position: relative;
+
+  left: 5%;
+  
+  padding: 60% 0;
+  @include media-breakpoint-up(lg){
+    left: -50px;
+    top: 5%;
+    padding: 45%;
   }
 }
 .bigFont{
@@ -201,7 +218,59 @@ padding: 2rem 0;
   font-size: 18px;
   line-height: 30px;
 }
+/* From uiverse.io by @alexroumi */
+.btn{
+  margin: 35px 0;
+}
+.btn {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 20px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .btn:hover {
+  color: #e8e8e8;
+ }
+ 
+ .btn:hover::before {
+  width: 100%;
+ }
+.centerbox{
 
+  @include media-breakpoint-up(lg){
+    padding: 70px;
+  }
+}
+.section_2{
+  background-color: #fff;
+  width: 100%;
+  padding-top: 500px;
+}
   // Source mixins
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`

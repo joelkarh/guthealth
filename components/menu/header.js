@@ -14,7 +14,7 @@ function Header() {
         <div className={`${menustyle.menu} position-relative `}>
             <Link href='/' className="brand-name">
                {/*  eslint-disable-next-line @next/next/no-img-element */}
-              <a className={menustyle.brand}><img className={`${menustyle.brandImg} img-fluid `} src='/romyhugens-svg.svg' alt=""/></a>
+              <a className={menustyle.brand}><img className={`${menustyle.brandImg} img-fluid `} src='/romyscg.svg' alt=""/></a>
             </Link>
             <div className={ menustyle.hideMenu}>
             <Menu />

@@ -31,7 +31,7 @@ const Menu = () => {
         {
             id: 5,
             href: '/',
-            menuItem:'Boek een discovery call',
+            menuItem:'Discovery call',
             style:'booking-btn'
         },
     ]

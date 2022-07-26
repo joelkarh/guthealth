@@ -57,6 +57,9 @@ $homebg:#e8edf0;
     padding:10px 0;
     margin-left: auto;
     margin-right: 5px;
+    @include media-breakpoint-up(md) {
+        margin-right: auto;
+    }
     @include media-breakpoint-up(lg) {
         margin-left: unset;
         margin-right: unset;
@@ -136,6 +139,54 @@ $homebg:#e8edf0;
 @include media-breakpoint-up(xxl) {
     padding: 3rem;
 }
+}
+.lineWrap {
+    position: relative;
+    
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    margin-bottom: -80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .line {
+    width: 1px;
+    height: 80px;
+    background-color: #1b1d1e;
+  }
+  .doodle{
+    position: absolute;
+    bottom: -435px;
+    right: 0;
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+        bottom: 10%;
+        left: 0;
+        transform: rotateY(180deg)
+    }
+
+  }
+  .doodle2{
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    @include media-breakpoint-up(lg){
+    width:65%;
+    left: 0px;
+    
+    }
 
 }
 
