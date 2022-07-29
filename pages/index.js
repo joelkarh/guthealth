@@ -25,26 +25,17 @@ export default function Home() {
             Lees meer
           </Link>
           </button>
-         
+
         </div>
         <div className={`col-12 col-md  ${style}`}> {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/doodle2.svg" alt="" className={styles.doodle2}/>
           <div className='img-wrapper'>
-          <Image className="img-fluid " priority src={img} layout='fill' alt={''} objectFit={'contain'} />
+          <Image className="img-fluid " priority src={img} height={height} width={width} alt={''} objectFit={'contain'} />
           </div> 
-          {/*  */}
         </div> 
         </div>
       ))}
-       <img src="/doodle.svg" alt="" className={styles.doodle}/>
-      <div className={styles.lineWrap}>
-        <div className={styles.line}></div>
-      </div>
       </section>
-      <section className='section_2'>
-        
-      </section>
-
     </Layout>
   )
 }

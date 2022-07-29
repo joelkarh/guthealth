@@ -146,7 +146,7 @@ nav{
         text-decoration: none;
         color: #222222;
       }
-      
+
     }
   }
 }
@@ -165,7 +165,7 @@ nav{
   }
 }
 //hamburger
- 
+
 
 .slice{
   transform: translateY(10px) translateX(1px) rotate(45deg);
@@ -187,30 +187,29 @@ nav{
 }
 .closed{
   transform: translateX(100%);
-  
+
 }
 
 /*-------------- homeCss-------*/
 .homeImage{
-padding: 2rem 0;
 position: relative;
-  @include media-breakpoint-up(lg){ 
-  padding: unset;
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  }
-}
-.img-wrapper {
-  position: relative;
 
-  left: 5%;
-  
-  padding: 60% 0;
+ @include media-breakpoint-up(lg){
+
+   }
+}
+
+.img-wrapper {
+  max-width: 991px;
+  max-height: 476px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
+  bottom: auto;
+
   @include media-breakpoint-up(lg){
-    left: -50px;
-    top: 5%;
-    padding: 45%;
+    left: 20px;
+    right: unset;
   }
 }
 .bigFont{
@@ -237,7 +236,7 @@ position: relative;
   transition: all 250ms;
   overflow: hidden;
  }
- 
+
  .btn::before {
   content: "";
   position: absolute;
@@ -252,11 +251,11 @@ position: relative;
   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   transition: all 250ms
  }
- 
+
  .btn:hover {
   color: #e8e8e8;
  }
- 
+
  .btn:hover::before {
   width: 100%;
  }
@@ -266,11 +265,7 @@ position: relative;
     padding: 70px;
   }
 }
-.section_2{
-  background-color: #fff;
-  width: 100%;
-  padding-top: 500px;
-}
+
   // Source mixins
 
 // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
