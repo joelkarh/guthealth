@@ -193,7 +193,7 @@ nav{
 /*-------------- homeCss-------*/
 .homeImage{
 position: relative;
-
+overflow: hidden;
  @include media-breakpoint-up(lg){
 
    }
@@ -206,6 +206,7 @@ position: relative;
   right: -25px;
   top: -10px;
   bottom: auto;
+  
 
   @include media-breakpoint-up(lg){
     left: 20px;
