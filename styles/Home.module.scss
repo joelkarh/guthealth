@@ -140,8 +140,7 @@ $homebg:#e8edf0;
     padding: 3rem;
 }
 }
-
-  .doodle{
+.doodle{
     // position: absolute;
     // bottom: -435px;
     // right: 0;
@@ -152,15 +151,17 @@ $homebg:#e8edf0;
         transform: rotateY(180deg)
     }
 
-  }
-  .doodle2{
-
+}
+.doodle2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
     @include media-breakpoint-up(lg){
-
     
     }
-
 }
+
 
 // Source mixins
 

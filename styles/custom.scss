@@ -57,7 +57,9 @@ body {
     line-height: 24px;
     background-color: $homebg;
   }
-
+.position-relative {  
+  position: relative;
+}
   //container-fluid
   .container-fluid {
     max-width: 1640px;
@@ -195,7 +197,7 @@ nav{
 position: relative;
 overflow: hidden;
  @include media-breakpoint-up(lg){
-  left: 50px;
+  left: 20px;
    }
 }
 
@@ -265,6 +267,21 @@ overflow: hidden;
   @include media-breakpoint-up(lg){
     padding: 70px;
   }
+}
+.line-wrap{
+  position: relative;
+  display: flex;
+    margin-top: -40px;
+    margin-bottom: -40px;
+    -webkit-box-orient: vertical;
+    flex-direction: column;
+    align-items: center;
+    .line{
+      width: 1px;
+      height: 80px;
+      background-color: #1b1d1e;
+  
+    }
 }
 
   // Source mixins

@@ -10,3 +10,35 @@ export const firstSection = [
         width:'468',
     }
 ]
+export const secondSection = [
+    {
+        id: 1,
+        src: '' ,
+        srcStyle:'',
+        bg:'' ,
+        bgStyle:'',
+        title:'Learn about nutrition',
+        Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',
+        
+    },
+    {
+        id: 2, 
+        src: '' , 
+        srcStyle:'',
+        bg:'' ,
+        bgStyle:'',
+        title:'Learn about nutrition',
+        Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',
+        
+    },
+    {
+        id: 3,  
+        src: '' ,
+        srcStyle:'',
+        bg:'' ,
+        bgStyle:'',
+        title:'Learn about nutrition',
+        Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',
+        
+    },
+]
