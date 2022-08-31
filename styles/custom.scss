@@ -167,8 +167,6 @@ nav{
   }
 }
 //hamburger
-
-
 .slice{
   transform: translateY(10px) translateX(1px) rotate(45deg);
 }
@@ -282,6 +280,18 @@ overflow: hidden;
       background-color: #1b1d1e;
   
     }
+}
+.icons{
+  position: relative;
+}
+.firstIconstyle{
+  position: absolute;
+}
+.sectionStyle{
+  @include media-breakpoint-up(xxl) {
+      display: flex;
+      justify-content: center;
+  }
 }
 
   // Source mixins

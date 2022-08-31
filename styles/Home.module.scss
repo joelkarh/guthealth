@@ -161,6 +161,32 @@ $homebg:#e8edf0;
     
     }
 }
+.sectionTwo{   
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff ;
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2{    
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 540px;
+        font-size: 32px;
+        line-height: 56px;
+        font-weight: 400;
+        @include media-breakpoint-up(xxl){
+            font-size: 40px;
+            margin-bottom: 50px;
+    }
+   
 
 
 // Source mixins
@@ -183,3 +209,5 @@ $homebg:#e8edf0;
 //     display: block;
 //   }
 // }
+    }
+}

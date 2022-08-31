@@ -13,9 +13,9 @@ export const firstSection = [
 export const secondSection = [
     {
         id: 1,
-        src: '' ,
-        srcStyle:'',
-        bg:'' ,
+        src: '/iconsmailbox.svg' ,
+        srcStyle:'firstIconstyle',
+        bg:'/Blobblue.svg' ,
         bgStyle:'',
         title:'Learn about nutrition',
         Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',
@@ -23,9 +23,9 @@ export const secondSection = [
     },
     {
         id: 2, 
-        src: '' , 
-        srcStyle:'',
-        bg:'' ,
+        src: '/iconsidea.svg' , 
+        srcStyle:'firstIconstyle',
+        bg:'/bloborange.svg' ,
         bgStyle:'',
         title:'Learn about nutrition',
         Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',
@@ -33,9 +33,9 @@ export const secondSection = [
     },
     {
         id: 3,  
-        src: '' ,
-        srcStyle:'',
-        bg:'' ,
+        src: '/music.svg' ,
+        srcStyle:'firstIconstyle',
+        bg:'/Blobblue.svg' ,
         bgStyle:'',
         title:'Learn about nutrition',
         Text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, mi.',

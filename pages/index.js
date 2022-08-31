@@ -3,8 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/menu/layout'
 import styles from '../styles/Home.module.scss'
-import {firstSection} from '../Data/homeData'
+import {firstSection, secondSection} from '../Data/homeData'
 import Link from 'next/link'
+
 
 
 export default function Home() {
@@ -39,13 +40,24 @@ export default function Home() {
         <div className="line"></div>
       </div>
       </section>
-      <section>
+      <section className={`${styles.sectionTwo} `}>
         <h2>Being healthy finally made simple</h2>
-        <article>
-          <img src="" alt=""/>
-          <h5></h5>
-          <p className="bigFont">{}</p>
+        <section className='sectionStyle container '>
+          { secondSection .map(({id, src,bg, title, Text, srcStyle}) =>(
+          <article key={id} className=''>
+          <div className="icons position-relative">
+            <img src={src}  className={srcStyle} alt="lol"/>
+            <img src={bg} className='{srcStyle}' alt="lol"/>
+          </div>
+          <h5>{title}</h5>
+          <p className="bigFont">{Text}</p>
         </article>
+        ))
+        
+        }
+        </section>
+        
+        
       </section>
     </Layout>
   )
